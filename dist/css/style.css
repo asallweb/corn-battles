@@ -4317,6 +4317,7 @@ body::before {
 }
 .section-1__socials {
   position: absolute;
+  z-index: 3;
   top: 20%;
   display: flex;
   flex-direction: column;
@@ -4924,6 +4925,9 @@ body::before {
   .popup__top-title {
     font-size: 2rem
   }
+  .popup__bottom {
+    font-size: 1rem
+  }
   .popup__button-wrapper {
     font-size: 1.6875rem
   }
@@ -5429,6 +5433,9 @@ body::before {
   .popup__top-title {
     font-size: 1.75rem
   }
+  .popup__bottom {
+    font-size: .875rem
+  }
   .popup__button-wrapper {
     font-size: 1.375rem
   }
@@ -5601,7 +5608,7 @@ body::before {
     height: 3.125rem
   }
   .section-5__bottitle {
-    font-size: 1.0625rem
+    font-size: .9375rem
   }
   .section-6 {
     padding-top: 2.5rem
@@ -5636,6 +5643,7 @@ body::before {
 }
 @media (max-width:47.99875em) {
   .header {
+    z-index: inherit;
     padding-top: 10px
   }
   .header__logo {
@@ -5688,6 +5696,9 @@ body::before {
   .section-1__socials span {
     display: none
   }
+  .section-1__ticker-item {
+    margin: 0 70px
+  }
   .section-3__geometry {
     background-size: 200% 100%
   }
@@ -5732,6 +5743,9 @@ body::before {
 @media (min-width:20em) and (max-width:86.875em) {
   .popup__top-title {
     font-size: clamp(1.75rem ,1.6752336449rem + .3738317757vw ,2rem)
+  }
+  .popup__bottom {
+    font-size: clamp(.875rem ,.8376168224rem + .1869158879vw ,1rem)
   }
   .popup__button-wrapper {
     font-size: clamp(1.375rem ,1.2815420561rem + .4672897196vw ,1.6875rem)
@@ -5905,7 +5919,7 @@ body::before {
     height: clamp(3.125rem ,2.7511682243rem + 1.8691588785vw ,4.375rem)
   }
   .section-5__bottitle {
-    font-size: clamp(1.0625rem ,.539135514rem + 2.6168224299vw ,2.8125rem)
+    font-size: clamp(.9375rem ,.3767523364rem + 2.8037383178vw ,2.8125rem)
   }
   .section-6 {
     padding-top: clamp(2.5rem ,1.3785046729rem + 5.6074766355vw ,6.25rem)
