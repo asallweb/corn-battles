@@ -4208,6 +4208,12 @@ body::before {
   width: 100%;
   height: 510px
 }
+.swiper .swiper__youtube-iframe img {
+  width: 100%;
+  height: 510px;
+  -o-object-fit: cover;
+  object-fit: cover
+}
 .swiper__youtube-description {
   display: flex;
   align-items: center;
