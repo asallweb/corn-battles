@@ -4128,13 +4128,14 @@ body::after {
   display: flex;
   align-items: flex-end;
   justify-content: flex-start;
-  gap: 12px;
   color: #7d7d7d;
   font-weight: 600;
   line-height: normal
 }
 .footer__logo img {
-  max-width: 475px
+  max-width: 475px;
+  position: relative;
+  bottom: -3px
 }
 .footer__image {
   max-width: 210px
