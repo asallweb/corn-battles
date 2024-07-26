@@ -4145,6 +4145,9 @@ body::after {
   flex-wrap: wrap;
   gap: 5px
 }
+:root {
+  --animate-delay: 0.7s
+}
 body {
   background-color: #0044ab
 }

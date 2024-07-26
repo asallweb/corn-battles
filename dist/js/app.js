@@ -3684,11 +3684,11 @@
                         }
                     }));
                 }), {
-                    rootMargin: "0px 0px -100px 0px"
+                    rootMargin: "0px 0px -50px 0px"
                 });
                 observer.observe(element);
             }));
-        }), 300);
+        }), 100);
     }));
     function openPopup() {
         if (typeof modules_flsModules !== "undefined" && modules_flsModules.popup && typeof modules_flsModules.popup.open === "function") modules_flsModules.popup.open("#popup"); else console.error("flsModules.popup.open не является функцией");
