@@ -3890,7 +3890,7 @@ body::after {
   width: 100%;
   height: 100vh;
   max-width: 758px;
-  max-height: 485px
+  max-height: 415px
 }
 .lock .popup__content {
   visibility: visible
