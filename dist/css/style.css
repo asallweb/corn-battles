@@ -4415,7 +4415,8 @@ body::before {
   font-family: Myriad Pro;
   text-shadow: 0 2px 0 #07242c;
   -webkit-text-stroke: 2px #07242c;
-  text-stroke: 2px #07242c
+  text-stroke: 2px #07242c;
+  margin-top: 10px
 }
 .roadmap__grid {
   display: grid;
