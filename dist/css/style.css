@@ -4083,6 +4083,9 @@ body::after {
 .header__tools-telegram:hover {
   opacity: .8
 }
+.header__tools-telegram img {
+  max-width: 48px
+}
 .header__tools-lang {
   border-left: 2px solid #9daec1;
   padding-left: 25px;
@@ -4406,11 +4409,7 @@ body::before {
 }
 .section-1__socials-link img {
   width: 100%;
-  height: auto;
-  mage-rendering: -webkit-optimize-contrast;
-  image-rendering: optimize-contrast;
-  image-rendering: crisp-edges;
-  image-rendering: optimizequality
+  height: auto
 }
 .section-1__socials-link:hover {
   opacity: .8;
@@ -4928,11 +4927,7 @@ body::before {
 }
 .section-6 img {
   width: 100%;
-  height: auto;
-  mage-rendering: -webkit-optimize-contrast;
-  image-rendering: optimize-contrast;
-  image-rendering: crisp-edges;
-  image-rendering: optimizequality
+  height: auto
 }
 .section-6__wrapper {
   background: url(../img/backgrounds/series__pattern.webp) center top repeat;
