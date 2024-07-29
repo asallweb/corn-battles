@@ -4086,6 +4086,9 @@ body::after {
 .header__tools-telegram img {
   max-width: 48px
 }
+.header__tools-telegram svg {
+  max-width: 48px
+}
 .header__tools-lang {
   border-left: 2px solid #9daec1;
   padding-left: 25px;
