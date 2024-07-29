@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240726175350">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240729124927">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,10 +30,16 @@
 								<img src="img/logos/tg-small.webp" alt="telegram">
 							</a>
 							<div class="header__tools-lang">
-								<a href="" class="header__tools-lang-current">
+								<button class="header__tools-lang-current">
 									EN
 									<img src="img/icons/arrow-select.svg">
-								</a>
+								</button>
+								<div class="header__lang-list hidden">
+									<a href="" class="header__lang-item">Русский</a>
+									<a href="" class="header__lang-item">Английский</a>
+									<a href="" class="header__lang-item">Еще</a>
+									<a href="" class="header__lang-item">Еще</a>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -57,7 +63,6 @@
 				<a href="https://tiktok.com/@cornbattles" target="_blank" class="section-1__socials-link">
 					<img src="img/logos/tiktok.webp">
 				</a>
-				<span>Join us!</span>
 			</div>
 			<section class="section-1">
 				<div class="__container">
@@ -68,6 +73,13 @@
 						</div>
 						<div class="section-1__title hasAnimation animate__animated hidden " data-animate="animate__fadeInUp">
 							START EARN $CORN<span>IO</span><br> BEFORE LISTING
+						</div>
+						<div class="section-1__button-outer hasAnimation animate__animated hidden " data-animate="animate__fadeInUp">
+							<button class="section-1__button">
+								<div class="section-1__button-wrapper">
+									Play now
+								</div>
+							</button>
 						</div>
 						<div class="section-1__ton">
 							<img src="img/logos/ton.webp" class="hasAnimation animate__animated hidden " data-animate="animate__fadeInLeft">
@@ -142,7 +154,7 @@
 								<div href="" class="roadmap__item _filled _yellow-bg" data-da=".roadmap__yellow-mobile-placeholder, 900"><span>3 million players</span></div>
 								<img src="img/backgrounds/roadmap__yellow-line.webp" class="roadmap__yellow-line">
 							</div>
-							<div class="roadmap__yellow-mobile-placeholder "></div>
+							<div class="roadmap__column roadmap__yellow-mobile-placeholder "></div>
 							<div class="roadmap__column">
 								<img src="img/backgrounds/roadmap__black-line.webp" class="roadmap__black-line">
 								<div href="" class="roadmap__item _filled _black-bg"><span>15 million players</span></div>
@@ -196,52 +208,7 @@
 									</div>
 									<div class="swiper-slide">
 										<div class="swiper__youtube-wrapper">
-											<div class="swiper__youtube-iframe" data-video-id="VezrqidI">
-												<img src="img/content/youtube-prev-2.webp" alt="">
-											</div>
-										</div>
-										<a href="https://www.youtube.com/embed/78-VezrqidI" class="swiper__youtube-description">
-											<div class="swiper__youtube-name">
-												Episode 2: Corning Bad
-											</div>
-											<div class="swiper__youtube-logo">
-												<img src="img/logos/swiper-youtube.webp">
-											</div>
-										</a>
-									</div>
-									<div class="swiper-slide">
-										<div class="swiper__youtube-wrapper">
-											<div class="swiper__youtube-iframe" data-video-id="gToj_F16qoE">
-												<img src="img/content/youtube-prev-3.webp" alt="">
-											</div>
-										</div>
-										<a href="https://www.youtube.com/embed/gToj_F16qoE" class="swiper__youtube-description">
-											<div class="swiper__youtube-name">
-												Episode 1: Cornbin Hood and the Unlucky Arrow
-											</div>
-											<div class="swiper__youtube-logo">
-												<img src="img/logos/swiper-youtube.webp">
-											</div>
-										</a>
-									</div>
-									<div class="swiper-slide">
-										<div class="swiper__youtube-wrapper">
-											<div class="swiper__youtube-iframe" data-video-id="m4uWhjBzB4U">
-												<img src="img/content/youtube-prev-1.webp" alt="">
-											</div>
-										</div>
-										<a href="https://www.youtube.com/watch?v=m4uWhjBzB4U" class="swiper__youtube-description">
-											<div class="swiper__youtube-name">
-												Episode 3: You Shall Not Pass
-											</div>
-											<div class="swiper__youtube-logo">
-												<img src="img/logos/swiper-youtube.webp">
-											</div>
-										</a>
-									</div>
-									<div class="swiper-slide">
-										<div class="swiper__youtube-wrapper">
-											<div class="swiper__youtube-iframe" data-video-id="VezrqidI">
+											<div class="swiper__youtube-iframe" data-video-id="78-VezrqidI">
 												<img src="img/content/youtube-prev-2.webp" alt="">
 											</div>
 										</div>
@@ -288,21 +255,6 @@
 											<img src="img/content/youtube-1-small.webp">
 										</div>
 									</div>
-									<div class="swiper-slide">
-										<div class="swiper__youtube-small-wrapper">
-											<img src="img/content/youtube-1.webp">
-										</div>
-									</div>
-									<div class="swiper-slide">
-										<div class="swiper__youtube-small-wrapper">
-											<img src="img/content/youtube-2-small.webp">
-										</div>
-									</div>
-									<div class="swiper-slide">
-										<div class="swiper__youtube-small-wrapper">
-											<img src="img/content/youtube-1-small.webp">
-										</div>
-									</div>
 								</div>
 								<div class="swiper__gradient"></div>
 							</div>
@@ -314,7 +266,10 @@
 							</div>
 						</div>
 						<div class="section-3__view-more-wrapper hasAnimation animate__animated hidden " data-animate="animate__fadeInUp">
-							<a href="https://youtube.com/@corniotoken" target="_blank" class="section-3__view-more"><img src="img/logos/youtube-view-more.webp" alt=""></a>
+							<a href="https://youtube.com/@corniotoken" target="_blank" class="section-3__view-more">
+								<img src="img/logos/youtube-view-more.svg">
+								View more
+							</a>
 						</div>
 					</div>
 				</div>
@@ -474,7 +429,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20240726175350"></script>
+	<script src="js/app.min.js?_v=20240729124927"></script>
 </body>
 
 </html>

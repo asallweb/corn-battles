@@ -3596,16 +3596,16 @@
                 spaceBetween: 20,
                 slidesPerView: "auto",
                 freeMode: true,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev"
+                },
                 watchSlidesProgress: true
             });
             new swiper_core_Swiper(".mySwiper2", {
                 modules: [ Navigation, Thumb ],
                 loop: true,
                 spaceBetween: 20,
-                navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev"
-                },
                 thumbs: {
                     swiper: thumbSwiper
                 }
@@ -3810,6 +3810,34 @@
                 this.appendChild(iframe);
             }));
         }));
+    }));
+    document.addEventListener("DOMContentLoaded", (() => {
+        const langButton = document.querySelector(".header__tools-lang");
+        const langList = document.querySelector(".header__lang-list");
+        function hideLangList() {
+            langList.classList.remove("animate__fadeInDown");
+            langList.classList.add("animate__fadeOutUp");
+            setTimeout((() => {
+                langList.classList.remove("visible");
+                langList.classList.add("hidden");
+            }), 500);
+        }
+        if (langButton && langList) {
+            langButton.addEventListener("click", (event => {
+                event.stopPropagation();
+                if (langList.classList.contains("visible")) hideLangList(); else {
+                    langList.classList.remove("hidden");
+                    langList.classList.add("animate__animated", "visible", "animate__fadeInDown");
+                    langList.classList.remove("animate__fadeOutUp");
+                }
+            }));
+            document.addEventListener("click", (event => {
+                if (!langList.contains(event.target) && !langButton.contains(event.target)) if (langList.classList.contains("visible")) hideLangList();
+            }));
+            langList.addEventListener("click", (event => {
+                event.stopPropagation();
+            }));
+        }
     }));
     window["FLS"] = true;
     pageNavigation();
