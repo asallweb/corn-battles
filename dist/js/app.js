@@ -116,7 +116,6 @@
             this.options.init ? this.initPopups() : null;
         }
         initPopups() {
-            this.popupLogging(`Прокинувся`);
             this.eventsPopup();
         }
         eventsPopup() {
@@ -132,7 +131,7 @@
                         this._selectorOpen = true;
                         this.open();
                         return;
-                    } else this.popupLogging(`Йой, не заповнено атрибут у ${buttonOpen.classList}`);
+                    }
                     return;
                 }
                 const buttonClose = e.target.closest(`[${this.options.attributeCloseButton}]`);
@@ -217,8 +216,7 @@
                             popup: this
                         }
                     }));
-                    this.popupLogging(`Відкрив попап`);
-                } else this.popupLogging(`Йой, такого попапу немає. Перевірте коректність введення. `);
+                }
             }
         }
         close(selectorValue) {
@@ -252,7 +250,6 @@
             setTimeout((() => {
                 this._focusTrap();
             }), 50);
-            this.popupLogging(`Закрив попап`);
         }
         _getHash() {
             if (this.options.hashSettings.location) this.hash = this.targetOpen.selector.includes("#") ? this.targetOpen.selector : this.targetOpen.selector.replace(".", "#");
@@ -285,9 +282,6 @@
         _focusTrap() {
             const focusable = this.previousOpen.element.querySelectorAll(this._focusEl);
             if (!this.isOpen && this.lastFocusEl) this.lastFocusEl.focus(); else focusable[0].focus();
-        }
-        popupLogging(message) {
-            this.options.logging ? functions_FLS(`[Попапос]: ${message}`) : null;
         }
     }
     modules_flsModules.popup = new Popup({});
@@ -3839,6 +3833,20 @@
             }));
         }
     }));
-    window["FLS"] = true;
+    function addTickerItems() {
+        let currentDate = new Date;
+        let players_count = 1e6 + currentDate.getFullYear() * 100 + (currentDate.getMonth() + 1) * 20 + currentDate.getDate() * 10 + currentDate.getHours() * 5 + currentDate.getMinutes() * 2 + currentDate.getSeconds();
+        players_count = players_count.toLocaleString("en-US").replace(/,/g, " ");
+        let count_iter = 40;
+        let tickerContainer = document.querySelector(".section-1__ticker-content");
+        if (tickerContainer) for (let i = 0; i < count_iter; i++) {
+            let tickerItem = document.createElement("div");
+            tickerItem.className = "section-1__ticker-item";
+            tickerItem.textContent = players_count + " players";
+            tickerContainer.appendChild(tickerItem);
+        } else console.error("Element with class '.section-1__ticker-content' not found.");
+    }
+    document.addEventListener("DOMContentLoaded", addTickerItems);
+    window["FLS"] = false;
     pageNavigation();
 })();
