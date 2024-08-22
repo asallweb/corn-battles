@@ -4527,13 +4527,13 @@ body::before {
 .roadmap__column:nth-child(3) {
   padding-right: 28px
 }
-.roadmap__yellow-line {
+.roadmap__bottom-line {
   position: absolute;
   left: 15px;
   width: 119%;
   bottom: -7%
 }
-.roadmap__black-line {
+.roadmap__center-line {
   position: absolute;
   top: -65px;
   left: 12px;
@@ -4621,13 +4621,14 @@ body::before {
 .roadmap__yellow-mobile-placeholder::before {
   content: "";
   background: url(../img/backgrounds/roadmap__yellow-mobile.svg) 0 0 repeat-y;
-  background-size: 100% 100%;
   display: block;
-  height: 143px;
+  background-size: 100% auto;
+  height: 65%;
   width: 10px;
   position: absolute;
   left: 15px;
-  top: 19px
+  top: 259px;
+  z-index: 1
 }
 .roadmap__column:nth-child(3),
 .roadmap__column:nth-child(4) {
@@ -5274,22 +5275,22 @@ body::before {
   }
 }
 @media (max-width:1230px) {
-  .roadmap__yellow-line {
+  .roadmap__bottom-line {
     bottom: -3%
   }
 }
 @media (max-width:1200px) {
-  .roadmap__black-line {
+  .roadmap__center-line {
     width: 121%
   }
 }
 @media (max-width:1150px) {
-  .roadmap__yellow-line {
+  .roadmap__bottom-line {
     bottom: -1%
   }
 }
 @media (max-width:1100px) {
-  .roadmap__black-line {
+  .roadmap__center-line {
     width: 123%
   }
   .section-5__left-image {
@@ -5362,7 +5363,7 @@ body::before {
   }
 }
 @media (max-width:950px) {
-  .roadmap__yellow-line {
+  .roadmap__bottom-line {
     bottom: 3%
   }
   .roadmap .__container {
@@ -5379,17 +5380,26 @@ body::before {
   .roadmap__column:nth-child(1)::before {
     height: calc(100% - 20px)
   }
-  .roadmap__yellow-line {
+  .roadmap__bottom-line {
     display: none
   }
-  .roadmap__black-line {
+  .roadmap__center-line {
     display: none
   }
   .roadmap__yellow-mobile-placeholder {
     display: flex
   }
+  .roadmap ._morder-1 {
+    order: 1
+  }
+  .roadmap ._morder-2 {
+    order: 2
+  }
+  .roadmap ._morder-3 {
+    order: 3
+  }
   .roadmap__column:nth-child(1)::before {
-    height: calc(100% + 55px);
+    height: calc(100% + 160px);
     width: 10px;
     border-radius: 5px;
     left: 15px;
@@ -5397,6 +5407,10 @@ body::before {
   }
   .roadmap__column:nth-child(3) {
     flex-direction: column-reverse
+  }
+  .roadmap__column:nth-child(3)::before {
+    height: calc(100% - 120px)!important;
+    top: 157px!important
   }
   .roadmap__column:nth-child(3)::before,
   .roadmap__column:nth-child(4)::before {
