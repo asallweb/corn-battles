@@ -4227,7 +4227,9 @@ body::before {
   margin-bottom: 16px
 }
 .swiper.mySwiper {
-  position: relative
+  position: relative;
+  max-width: 814px;
+  margin: 0 auto
 }
 .swiper.mySwiper .swiper-slide {
   width: 29%;
@@ -4294,25 +4296,23 @@ body::before {
   border-radius: 9.269px 0 0 9.269px;
   display: none
 }
+.swiper-button-next,
 .swiper-button-prev {
   position: absolute;
-  left: -80px;
   bottom: 50px;
-  -webkit-transform: rotate(180deg);
-  transform: rotate(180deg);
   cursor: pointer
 }
+.swiper-button-next:hover,
 .swiper-button-prev:hover {
   opacity: .8
 }
-.swiper-button-next {
-  position: absolute;
-  right: -80px;
-  bottom: 50px;
-  cursor: pointer
+.swiper-button-prev {
+  left: -20px;
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg)
 }
-.swiper-button-next:hover {
-  opacity: .8
+.swiper-button-next {
+  right: -20px
 }
 .section-1 {
   position: relative;
@@ -4754,7 +4754,8 @@ body::before {
   font-weight: 800;
   line-height: 111.842%;
   text-transform: uppercase;
-  font-family: Manrope
+  font-family: Manrope;
+  margin-bottom: 40px
 }
 .section-4__subtitle {
   position: relative;
@@ -4865,9 +4866,10 @@ body::before {
   text-edge: cap;
   font-style: normal;
   font-weight: 800;
-  line-height: 111.842%;
+  line-height: 1;
   text-transform: uppercase;
-  font-family: Manrope
+  font-family: Manrope;
+  margin-bottom: 40px
 }
 .section-5__subtitle {
   position: relative;
@@ -4907,17 +4909,16 @@ body::before {
   position: relative;
   z-index: 1;
   text-align: center;
-  text-shadow: 0 2px 4px #2c1907;
   font-family: Manrope;
   font-weight: 600;
-  line-height: 111%;
+  line-height: 138%;
   text-transform: uppercase;
   position: absolute;
   left: 50%;
   -webkit-transform: translate(-50%,0);
   transform: translate(-50%,0);
   width: 100%;
-  bottom: 20px
+  bottom: 10px
 }
 .section-6 {
   background: url(../img/backgrounds/section-6.webp) 0 0 no-repeat;
@@ -4964,9 +4965,10 @@ body::before {
   text-edge: cap;
   font-style: normal;
   font-weight: 800;
-  line-height: 111.842%;
+  line-height: 1;
   text-transform: uppercase;
-  font-family: Manrope
+  font-family: Manrope;
+  margin-bottom: 40px
 }
 .section-6__socials {
   margin: 0 auto;
@@ -5156,9 +5158,6 @@ body::before {
     font-size: 4rem
   }
   .section-4__title {
-    margin-bottom: 1.25rem
-  }
-  .section-4__title {
     margin-top: 5.625rem
   }
   .section-4__subtitle {
@@ -5177,9 +5176,6 @@ body::before {
     font-size: 4rem
   }
   .section-5__title {
-    margin-bottom: 2.5rem
-  }
-  .section-5__title {
     margin-top: 5.625rem
   }
   .section-5__subtitle {
@@ -5192,7 +5188,7 @@ body::before {
     height: 4.375rem
   }
   .section-5__bottitle {
-    font-size: 2.8125rem
+    font-size: 2.25rem
   }
   .section-6 {
     padding-top: 6.25rem
@@ -5207,13 +5203,10 @@ body::before {
     width: 32.625rem
   }
   .section-6__content {
-    top: 7.875rem
+    top: 18.125rem
   }
   .section-6__title {
     font-size: 4rem
-  }
-  .section-6__title {
-    margin-bottom: 4.6875rem
   }
   .section-6__socials {
     gap: 1.875rem
@@ -5673,9 +5666,6 @@ body::before {
     font-size: 1.625rem
   }
   .section-4__title {
-    margin-bottom: .625rem
-  }
-  .section-4__title {
     margin-top: 3.75rem
   }
   .section-4__subtitle {
@@ -5694,9 +5684,6 @@ body::before {
     font-size: 1.625rem
   }
   .section-5__title {
-    margin-bottom: 1.5625rem
-  }
-  .section-5__title {
     margin-top: 3.75rem
   }
   .section-5__subtitle {
@@ -5709,7 +5696,7 @@ body::before {
     height: 3.125rem
   }
   .section-5__bottitle {
-    font-size: .9375rem
+    font-size: .875rem
   }
   .section-6 {
     padding-top: 2.5rem
@@ -5724,13 +5711,10 @@ body::before {
     width: 13.75rem
   }
   .section-6__content {
-    top: 2.5rem
+    top: 6.25rem
   }
   .section-6__title {
     font-size: 1.625rem
-  }
-  .section-6__title {
-    margin-bottom: 1.25rem
   }
   .section-6__socials {
     gap: .625rem
@@ -5811,6 +5795,10 @@ body::before {
     padding-left: 15px;
     font-size: 15px
   }
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none
+  }
   .swiper__youtube-description {
     gap: 15px;
     padding: 6px 10px;
@@ -5845,6 +5833,9 @@ body::before {
   }
   .section-6__right-image {
     right: -64px
+  }
+  .section-6__socials {
+    max-width: 220px
   }
 }
 @media (max-width:23.4375em) {
@@ -5989,9 +5980,6 @@ body::before {
     font-size: clamp(1.625rem ,.9147196262rem + 3.5514018692vw ,4rem)
   }
   .section-4__title {
-    margin-bottom: clamp(.625rem ,.4380841121rem + .9345794393vw ,1.25rem)
-  }
-  .section-4__title {
     margin-top: clamp(3.75rem ,3.1892523364rem + 2.8037383178vw ,5.625rem)
   }
   .section-4__subtitle {
@@ -6010,9 +5998,6 @@ body::before {
     font-size: clamp(1.625rem ,.9147196262rem + 3.5514018692vw ,4rem)
   }
   .section-5__title {
-    margin-bottom: clamp(1.5625rem ,1.2821261682rem + 1.4018691589vw ,2.5rem)
-  }
-  .section-5__title {
     margin-top: clamp(3.75rem ,3.1892523364rem + 2.8037383178vw ,5.625rem)
   }
   .section-5__subtitle {
@@ -6025,7 +6010,7 @@ body::before {
     height: clamp(3.125rem ,2.7511682243rem + 1.8691588785vw ,4.375rem)
   }
   .section-5__bottitle {
-    font-size: clamp(.9375rem ,.3767523364rem + 2.8037383178vw ,2.8125rem)
+    font-size: clamp(.875rem ,.4637850467rem + 2.0560747664vw ,2.25rem)
   }
   .section-6 {
     padding-top: clamp(2.5rem ,1.3785046729rem + 5.6074766355vw ,6.25rem)
@@ -6040,13 +6025,10 @@ body::before {
     width: clamp(13.75rem ,8.1051401869rem + 28.2242990654vw ,32.625rem)
   }
   .section-6__content {
-    top: clamp(2.5rem ,.8925233645rem + 8.0373831776vw ,7.875rem)
+    top: clamp(6.25rem ,2.6985981308rem + 17.7570093458vw ,18.125rem)
   }
   .section-6__title {
     font-size: clamp(1.625rem ,.9147196262rem + 3.5514018692vw ,4rem)
-  }
-  .section-6__title {
-    margin-bottom: clamp(1.25rem ,.2219626168rem + 5.1401869159vw ,4.6875rem)
   }
   .section-6__socials {
     gap: clamp(.625rem ,.2511682243rem + 1.8691588785vw ,1.875rem)

@@ -3588,7 +3588,7 @@
                 modules: [ Navigation, Thumb ],
                 loop: true,
                 spaceBetween: 20,
-                slidesPerView: "auto",
+                slidesPerView: 3,
                 freeMode: true,
                 navigation: {
                     nextEl: ".swiper-button-next",
