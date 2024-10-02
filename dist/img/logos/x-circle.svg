@@ -1,15 +1,10 @@
-<svg width="304" height="304" viewBox="0 0 304 304" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g filter="url(#filter0_b_450_987)">
-<rect width="304" height="304" rx="152" fill="#41494D" fill-opacity="0.9"/>
-<rect x="4" y="4" width="296" height="296" rx="148" stroke="#9FA5AC" stroke-opacity="0.6" stroke-width="8"/>
-<path d="M191.108 88H211.962L166.402 142.219L220 216H178.033L145.163 171.253L107.552 216H86.6856L135.417 158.006L84 88H127.032L156.744 128.901L191.108 88ZM183.789 203.003H195.344L120.753 100.314H108.353L183.789 203.003Z" fill="white"/>
+<svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="icon_X" clip-path="url(#clip0_915_1295)">
+<path id="Subtract" fill-rule="evenodd" clip-rule="evenodd" d="M28 56C43.464 56 56 43.464 56 28C56 12.536 43.464 0 28 0C12.536 0 0 12.536 0 28C0 43.464 12.536 56 28 56ZM42.1087 13H37.2019L29.1162 22.2666L22.1252 13H12L24.0981 28.8608L12.6319 42H17.5417L26.3913 31.8619L34.1254 42H44L31.3887 25.2841L42.1087 13ZM38.1987 39.0554H35.4797L17.7301 15.7899H20.6478L38.1987 39.0554Z" fill="white"/>
 </g>
 <defs>
-<filter id="filter0_b_450_987" x="-28" y="-28" width="360" height="360" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feGaussianBlur in="BackgroundImageFix" stdDeviation="14"/>
-<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_450_987"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_450_987" result="shape"/>
-</filter>
+<clipPath id="clip0_915_1295">
+<rect width="56" height="56" fill="white"/>
+</clipPath>
 </defs>
 </svg>
