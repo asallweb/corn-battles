@@ -48,7 +48,7 @@
     class Popup {
         constructor(options) {
             let config = {
-                logging: true,
+                logging: false,
                 init: true,
                 attributeOpenButton: "data-popup",
                 attributeCloseButton: "data-close",
@@ -66,8 +66,8 @@
                 closeEsc: true,
                 bodyLock: true,
                 hashSettings: {
-                    location: true,
-                    goHash: true
+                    location: false,
+                    goHash: false
                 },
                 on: {
                     beforeOpen: function() {},
@@ -116,6 +116,7 @@
             this.options.init ? this.initPopups() : null;
         }
         initPopups() {
+            this.popupLogging(`Прокинувся`);
             this.eventsPopup();
         }
         eventsPopup() {
@@ -131,7 +132,7 @@
                         this._selectorOpen = true;
                         this.open();
                         return;
-                    }
+                    } else this.popupLogging(`Йой, не заповнено атрибут у ${buttonOpen.classList}`);
                     return;
                 }
                 const buttonClose = e.target.closest(`[${this.options.attributeCloseButton}]`);
@@ -216,7 +217,8 @@
                             popup: this
                         }
                     }));
-                }
+                    this.popupLogging(`Відкрив попап`);
+                } else this.popupLogging(`Йой, такого попапу немає. Перевірте коректність введення. `);
             }
         }
         close(selectorValue) {
@@ -250,6 +252,7 @@
             setTimeout((() => {
                 this._focusTrap();
             }), 50);
+            this.popupLogging(`Закрив попап`);
         }
         _getHash() {
             if (this.options.hashSettings.location) this.hash = this.targetOpen.selector.includes("#") ? this.targetOpen.selector : this.targetOpen.selector.replace(".", "#");
@@ -282,6 +285,9 @@
         _focusTrap() {
             const focusable = this.previousOpen.element.querySelectorAll(this._focusEl);
             if (!this.isOpen && this.lastFocusEl) this.lastFocusEl.focus(); else focusable[0].focus();
+        }
+        popupLogging(message) {
+            this.options.logging ? functions_FLS(`[Попапос]: ${message}`) : null;
         }
     }
     modules_flsModules.popup = new Popup({});

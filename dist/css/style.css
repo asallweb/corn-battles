@@ -4192,21 +4192,8 @@ body::after {
 :root {
   --animate-delay: 0.7s
 }
-html {
-  width: 100vw;
-  overflow-x: hidden
-}
 body {
   background-color: #0044ab
-}
-body::before {
-  content: "";
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100vw;
-  height: 250px
 }
 .wrapper {
   position: relative
@@ -4484,6 +4471,9 @@ body::before {
   background: url(../img/backgrounds/pattern.webp) 0 0 repeat #e6edf3;
   position: relative;
   padding-top: 80px
+}
+.roadmap__wrapper {
+  position: relative
 }
 .roadmap__title {
   color: #2366cd;
@@ -5208,6 +5198,9 @@ body::before {
   .section-6__title {
     font-size: 4rem
   }
+  ._ru .section-6__title {
+    font-size: 3.25rem
+  }
   .section-6__socials {
     gap: 1.875rem
   }
@@ -5716,6 +5709,9 @@ body::before {
   .section-6__title {
     font-size: 1.625rem
   }
+  ._ru .section-6__title {
+    font-size: 1.5rem
+  }
   .section-6__socials {
     gap: .625rem
   }
@@ -6029,6 +6025,9 @@ body::before {
   }
   .section-6__title {
     font-size: clamp(1.625rem ,.9147196262rem + 3.5514018692vw ,4rem)
+  }
+  ._ru .section-6__title {
+    font-size: clamp(1.5rem ,.976635514rem + 2.6168224299vw ,3.25rem)
   }
   .section-6__socials {
     gap: clamp(.625rem ,.2511682243rem + 1.8691588785vw ,1.875rem)
