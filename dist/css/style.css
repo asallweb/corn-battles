@@ -5045,6 +5045,9 @@ body {
   .footer__logo {
     margin-top: -1.125rem
   }
+  .footer__logo {
+    gap: 2.5rem
+  }
   .footer__logo img {
     width: 20.3125rem
   }
@@ -5556,6 +5559,9 @@ body {
   .footer__logo {
     margin-top: .0000000625rem
   }
+  .footer__logo {
+    gap: .3125rem
+  }
   .footer__logo img {
     width: 6.25rem
   }
@@ -5872,6 +5878,9 @@ body {
   }
   .footer__logo {
     margin-top: clamp(-1.125rem ,.3364486793rem + -1.6822430841vw ,.0000000625rem)
+  }
+  .footer__logo {
+    gap: clamp(.3125rem ,-.3417056075rem + 3.2710280374vw ,2.5rem)
   }
   .footer__logo img {
     width: clamp(6.25rem ,2.0443925234rem + 21.0280373832vw ,20.3125rem)
